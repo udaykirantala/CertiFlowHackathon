@@ -1,0 +1,155 @@
+
+.certificates-page {
+  min-height: 100vh;
+  padding: 35px;
+  background: #f4f6fa;
+  font-family: Arial, sans-serif;
+}
+
+.certificates-heading {
+  margin: 25px 0;
+}
+
+.certificates-heading h1 {
+  margin: 0 0 8px;
+  color: #172b4d;
+  font-size: 27px;
+}
+
+.certificates-heading p {
+  margin: 0;
+  color: #718096;
+  font-size: 14px;
+}
+
+.certificate-summary {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  max-width: 380px;
+  padding: 22px;
+  margin-bottom: 25px;
+  background: white;
+  border: 1px solid #e7edf4;
+  border-radius: 10px;
+}
+
+.certificate-summary-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  background: #e6f0ff;
+  color: #2563eb;
+  border-radius: 9px;
+  font-size: 21px;
+}
+
+.certificate-summary span {
+  display: block;
+  margin-bottom: 8px;
+  color: #718096;
+  font-size: 12px;
+}
+
+.certificate-summary strong {
+  color: #172b4d;
+  font-size: 27px;
+}
+
+.certificate-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 450px;
+  padding: 0 13px;
+  margin-bottom: 22px;
+  background: white;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  color: #718096;
+}
+
+.certificate-search input {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.certificate-table {
+  overflow-x: auto;
+  background: white;
+  border: 1px solid #e7edf4;
+  border-radius: 10px;
+}
+
+.certificate-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.certificate-table th,
+.certificate-table td {
+  padding: 16px;
+  border-bottom: 1px solid #edf0f4;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.certificate-table th {
+  color: #64748b;
+  background: #f8fafc;
+}
+
+.issued-label {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #166534;
+  background: #dcfce7;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.view-certificate-button {
+  border: none;
+  background: none;
+  color: #2563eb;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.empty-certificates {
+  padding: 45px 20px;
+  background: white;
+  border: 1px solid #e7edf4;
+  border-radius: 10px;
+  text-align: center;
+  color: #718096;
+}
+
+.empty-certificates > svg {
+  color: #94a3b8;
+  font-size: 30px;
+}
+
+.empty-certificates h3 {
+  color: #172b4d;
+}
+
+.empty-certificates p {
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 650px) {
+  .certificates-page {
+    padding: 18px;
+  }
+}
