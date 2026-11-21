@@ -33,7 +33,6 @@ function TrainingCentreDashboard() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
 
-    // Fetch training centre batches
     useEffect(() => {
         const fetchBatches = async () => {
             try {
@@ -77,7 +76,6 @@ function TrainingCentreDashboard() {
     return (
         <div className="dashboard-container">
 
-            {/* Sidebar */}
             <aside className="sidebar">
                 <div className="sidebar-brand">
                     <h2>CertiFlow</h2>
@@ -108,7 +106,7 @@ function TrainingCentreDashboard() {
                         <span>My Batches</span>
                     </div>
 
-                    <div className="menu-item">
+                    <div className="menu-item" onClick={()=>navigate("/certificates")}>
                         <FontAwesomeIcon icon={faCertificate} />
                         <span>Certificates</span>
                     </div>
@@ -122,7 +120,6 @@ function TrainingCentreDashboard() {
                 </div>
             </aside>
 
-            {/* Main Content */}
             <main className="dashboard-content">
 
                 <header className="dashboard-topbar">
@@ -143,7 +140,6 @@ function TrainingCentreDashboard() {
                     </div>
                 </header>
 
-                {/* Welcome Section */}
                 <section className="welcome-section">
                     <div>
                         <h2>Welcome, {user?.name || "Training Centre"}!</h2>
@@ -162,7 +158,6 @@ function TrainingCentreDashboard() {
                     </button>
                 </section>
 
-                {/* Loading and Error */}
                 {loading && (
                     <p className="loading-message">Loading dashboard data...</p>
                 )}
@@ -171,7 +166,6 @@ function TrainingCentreDashboard() {
                     <p className="error-message">{error}</p>
                 )}
 
-                {/* Summary Cards */}
                 <section className="stats-grid">
 
                     <div className="stat-card">
